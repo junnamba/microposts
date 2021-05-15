@@ -4,11 +4,8 @@
  @if (Auth::check())
   <div class="row">
             <aside class="col-sm-4">
-                <div class="card">
-                    <div class="card-header">
-                        <h3 class="card-title">{{ Auth::user()->name }}</h3>
-                    </div>
-                     </div>
+               {{-- ユーザ情報 --}}
+                @include('users.card')
             </aside>
             <div class="col-sm-8">
                 {{-- 投稿フォーム --}}
